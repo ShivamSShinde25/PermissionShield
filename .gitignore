@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Temporary Files
+temp_apk/
+temp/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# APK Files (large)
+input/*.apk
