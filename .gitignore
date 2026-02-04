@@ -24,6 +24,3 @@ temp/
 # OS Files
 .DS_Store
 Thumbs.db
-
-# APK Files (large)
-input/*.apk
