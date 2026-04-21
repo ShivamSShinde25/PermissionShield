@@ -5,43 +5,37 @@ from collections import defaultdict
 # Risk Weights
 # -----------------------------------
 
-BEHAVIOR_RULES = {
+BNTACTS",
+          "READ_CONTACTS"
+        ):
+            dangerous_combo+=1
 
- "CAMERA":{
-   "flag":"Possible covert camera activity",
-   "weight":25
- },
 
- "LOCATION":{
-   "flag":"Potential location tracking behavior",
-   "weight":30
- },
-
- "MICROPHONE":{
-   "flag":"Potential microphone surveillance",
-   "weight":35
- },
-
- "CONTACTS":{
-   "flag":"Sensitive contact harvesting",
-   "weight":35
- },
-
- "READ_CONTACTS":{
-   "flag":"Sensitive contact harvesting",
-   "weight":35
- },
-
- "INTERNET":{
-   "flag":None,
-   "weight":5
- }
-
-}
+    if dangerous_combo>=3:
+        suspicious_flags.append(
+         "Multiple sensitive permissions indicate anomalous runtime behavior"
+        )
 
 
 
-# 
+    return suspicious_flags
+
+
+
+
+# -----------------------------------
+# Optional Dynamic Risk Score
+# -----------------------------------
+
+def calculate_dynamic_risk(flags):
+
+    score=len(flags)*20
+
+    if score<30:
+        level="LOW"
+
+    elif score<60:
+        level="MEDIUM"
 
     else:
         level="HIGH"
