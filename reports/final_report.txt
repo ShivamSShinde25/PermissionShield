@@ -1,0 +1,15 @@
+
+    --- App Permission Misuse Report ---
+    APK File: Security.apk
+
+    Static Analysis:
+    Extracted Permissions: ['BIND_ACCESSIBILITY_SERVICE', 'BIND_NOTIFICATION_LISTENER_SERVICE', 'DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION', 'INTERNET', 'POST_NOTIFICATIONS', 'QUERY_ALL_PACKAGES', 'READ_EXTERNAL_STORAGE', 'SYSTEM_ALERT_WINDOW', 'USE_BIOMETRIC', 'USE_FINGERPRINT', 'WRITE_EXTERNAL_STORAGE']
+    Flagged Permissions: ['INTERNET']
+
+    Feature Extraction:
+    Dangerous Permissions Count: 0
+    Flagged Permissions Count: 0
+
+    Conclusion:
+    
+Misuse Detected: No
