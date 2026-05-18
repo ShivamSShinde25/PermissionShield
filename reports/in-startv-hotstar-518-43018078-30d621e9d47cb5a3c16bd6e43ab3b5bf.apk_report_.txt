@@ -1,0 +1,14 @@
+=== PermissionShield Security Analysis Report ===
+APK: in-startv-hotstar-518-43018078-30d621e9d47cb5a3c16bd6e43ab3b5bf.apk
+
+Static Analysis (mock):
+  Extracted Permissions: ['ACCESS_COARSE_LOCATION', 'ACCESS_FINE_LOCATION', 'ACCESS_NETWORK_STATE', 'ACCESS_WIFI_STATE', 'BIND_GET_INSTALL_REFERRER_SERVICE', 'FOREGROUND_SERVICE', 'GET_TASKS', 'INTERNET', 'READ_EXTERNAL_STORAGE', 'READ_GSERVICES', 'READ_PHONE_STATE', 'RECEIVE', 'RECEIVE_BOOT_COMPLETED', 'RECORD_AUDIO', 'SYSTEM_ALERT_WINDOW', 'WAKE_LOCK', 'WRITE_EXTERNAL_STORAGE']
+
+Dynamic Flags (mock):
+  ['READ_PHONE_STATE', 'INTERNET']
+
+Dangerous Count: 0
+Flagged Count: 0
+
+Conclusion (mock):
+  Misuse Detected (mock): Yes
