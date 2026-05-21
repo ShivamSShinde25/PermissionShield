@@ -5,31 +5,7 @@ from collections import defaultdict
 # Risk Weights
 # -----------------------------------
 
-B
-        )
 
-
-    if (
-      "MICROPHONE" in permissions and
-      "INTERNET" in permissions
-    ):
-        suspicious_flags.append(
-           "Possible covert audio transmission"
-        )
-
-
-
-    # --------------------------------
-    # Multi-permission anomaly checks
-    # --------------------------------
-
-    dangerous_combo=0
-
-    for p in permissions:
-
-        if p in (
-          "CAMERA",
-          "LOCATION",
           "MICROPHONE",
           "CONTACTS",
           "READ_CONTACTS"
