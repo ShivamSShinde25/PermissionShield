@@ -5,7 +5,61 @@ from collections import defaultdict
 # Risk Weights
 # -----------------------------------
 
+BEHAVIOR_RULES = {
 
+ 
+    if (
+      "CAMERA" in permissions and
+      "INTERNET" in permissions
+    ):
+        suspicious_flags.append(
+          "Possible covert camera data transmission"
+        )
+
+
+    if (
+      "LOCATION" in permissions and
+      "INTERNET" in permissions
+    ):
+        suspicious_flags.append(
+          "Potential GPS tracking with network exfiltration"
+        )
+
+
+    if (
+      (
+       "CONTACTS" in permissions or
+       "READ_CONTACTS" in permissions
+      )
+      and
+      "INTERNET" in permissions
+    ):
+        suspicious_flags.append(
+           "Possible contact exfiltration behavior"
+        )
+
+
+    if (
+      "MICROPHONE" in permissions and
+      "INTERNET" in permissions
+    ):
+        suspicious_flags.append(
+           "Possible covert audio transmission"
+        )
+
+
+
+    # --------------------------------
+    # Multi-permission anomaly checks
+    # --------------------------------
+
+    dangerous_combo=0
+
+    for p in permissions:
+
+        if p in (
+          "CAMERA",
+          "LOCATION",
           "MICROPHONE",
           "CONTACTS",
           "READ_CONTACTS"
