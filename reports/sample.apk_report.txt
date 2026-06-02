@@ -1,0 +1,34 @@
+═══════════════════════════════════════
+        PERMISSIONSHIELD ANALYSIS
+═══════════════════════════════════════
+
+📱 Application: sample.apk
+
+🔍 PERMISSIONS DETECTED
+---------------------------------------
+• CAMERA
+• BLUETOOTH
+• LOCATION
+• CONTACTS
+• STORAGE
+
+⚠ SUSPICIOUS ELEMENTS
+---------------------------------------
+⚠ CAMERA
+⚠ CONTACTS
+
+📡 DYNAMIC BEHAVIOR ANALYSIS
+---------------------------------------
+• Sensitive contact data access
+
+📊 RISK METRICS
+---------------------------------------
+Risk Score: 13
+Behavior Flags: 1
+
+🧠 FINAL VERDICT
+---------------------------------------
+⚠ HIGH RISK APPLICATION
+Potential misuse of sensitive permissions detected.
+
+═══════════════════════════════════════

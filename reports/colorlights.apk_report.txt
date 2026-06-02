@@ -1,0 +1,33 @@
+═══════════════════════════════════════
+        PERMISSIONSHIELD ANALYSIS
+═══════════════════════════════════════
+
+📱 Application: colorlights.apk
+
+🔍 PERMISSIONS DETECTED
+---------------------------------------
+• CAMERA
+• STORAGE
+• LOCATION
+• INTERNET
+
+⚠ SUSPICIOUS ELEMENTS
+---------------------------------------
+⚠ CAMERA
+
+📡 DYNAMIC BEHAVIOR ANALYSIS
+---------------------------------------
+• Camera data transmission risk detected
+• Location tracking with network access
+
+📊 RISK METRICS
+---------------------------------------
+Risk Score: 10
+Behavior Flags: 2
+
+🧠 FINAL VERDICT
+---------------------------------------
+✓ LOW RISK APPLICATION
+No significant threats identified.
+
+═══════════════════════════════════════
