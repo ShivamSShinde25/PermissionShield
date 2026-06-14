@@ -7,7 +7,65 @@ from collections import defaultdict
 
 BEHAVIOR_RULES = {
 
- 
+ "CAMERA":{
+   "flag":"Possible covert camera activity",
+   "weight":25
+ },
+
+ "LOCATION":{
+   "flag":"Potential location tracking behavior",
+   "weight":30
+ },
+
+ "MICROPHONE":{
+   "flag":"Potential microphone surveillance",
+   "weight":35
+ },
+
+ "CONTACTS":{
+   "flag":"Sensitive contact harvesting",
+   "weight":35
+ },
+
+ "READ_CONTACTS":{
+   "flag":"Sensitive contact harvesting",
+   "weight":35
+ },
+
+ "INTERNET":{
+   "flag":None,
+   "weight":5
+ }
+
+}
+
+
+
+# -----------------------------------
+# Dynamic Analysis Engine
+# -----------------------------------
+
+def simulate_dynamic_analysis(permissions):
+    """
+    Dynamic behavior simulation based on
+    permission interaction patterns.
+
+    Returns:
+      list of suspicious runtime flags
+    """
+
+    permissions=set(
+       p.upper()
+       for p in permissions
+    )
+
+    suspicious_flags=[]
+
+
+    # --------------------------------
+    # Permission interaction analysis
+    # --------------------------------
+
     if (
       "CAMERA" in permissions and
       "INTERNET" in permissions
