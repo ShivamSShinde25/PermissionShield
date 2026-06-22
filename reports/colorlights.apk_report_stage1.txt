@@ -1,0 +1,16 @@
+=== PermissionShield - STAGE-1 MOCK REPORT ===
+APK: colorlights.apk
+
+Static Analysis (mock):
+  Extracted Permissions: ['INTERNET', 'VIBRATE', 'POST_NOTIFICATIONS', 'ACCESS_NETWORK_STATE', 'AD_ID', 'ACCESS_ADSERVICES_AD_ID', 'ACCESS_ADSERVICES_ATTRIBUTION', 'ACCESS_ADSERVICES_TOPICS', 'WAKE_LOCK', 'FOREGROUND_SERVICE', 'DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION']
+
+Dynamic Flags (mock):
+  ['INTERNET']
+
+Dangerous Count: 0
+Flagged Count: 0
+
+Conclusion (mock):
+  Misuse Detected (mock): No
+
+Note: This is a Stage-1 placeholder report. Full analysis will be added in later phases.
