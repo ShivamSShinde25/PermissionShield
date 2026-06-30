@@ -1,0 +1,6 @@
+STAGE-1 MOCK REPORT
+APK: sample.apk
+Permissions: ['INTERNET', 'CAMERA', 'LOCATION', 'READ_CONTACTS']
+Flagged: ['CAMERA', 'LOCATION']
+Counts: dangerous=2, flagged=3
+Misuse Detected (mock): Yes

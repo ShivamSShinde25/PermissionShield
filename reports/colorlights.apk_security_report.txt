@@ -1,0 +1,24 @@
+=========================================
+      PERMISSIONSHIELD SECURITY REPORT
+=========================================
+
+Application: colorlights.apk
+
+STATIC ANALYSIS
+---------------------------------
+
+Static Risk Score: 0
+Static Risk Level: LOW
+
+
+DYNAMIC ANALYSIS
+---------------------------------
+Dynamic Risk Score: 280
+Dynamic Risk Level: HIGH
+
+Behavioral Anomalies:
+* Possible contact exfiltration
+
+FINAL VERDICT
+---------------------------------
+HIGH RISK
